@@ -1,0 +1,43 @@
+# 🌐 Anahata – Context Data Flow Diagram
+
+This Context-Level Data Flow Diagram (DFD) provides a high-level overview of the **Anahata** emotional support system. It shows how the system interacts with external entities (users and GPT) and what type of data flows between them.
+
+---
+
+## 📦 System: Anahata
+
+Anahata is an AI-powered emotional wellness chatbot designed to offer support through personalized, empathetic conversations. At this level, the entire Anahata system is represented as a **single process**.
+
+---
+
+## 🌍 External Entities
+
+- **User**  
+  The primary external actor who interacts with Anahata. Users input personal emotional data, initiate sessions, and receive AI-driven empathetic responses.
+
+- **GPT**  
+  An external AI engine (e.g., OpenAI's GPT model) used by Anahata to generate contextual, empathetic replies based on the user’s mood and conversation state.
+
+---
+
+## 🔁 Data Flows
+
+| **From** | **To**      | **Data**                                 |
+|----------|-------------|-------------------------------------------|
+| User     | Anahata     | Personal Credentials, Mood Inputs         |
+| Anahata  | User        | Empathetic Response                       |
+| Anahata  | GPT         | User Management Info, Emotional Score     |
+| GPT      | Anahata     | AI-generated Empathetic Response          |
+
+---
+
+## 🧭 Visual Reference
+
+![Context DFD](./Context_DFD.png)
+
+---
+
+## ✅ Notes
+- This is a **high-level** abstraction that does not include internal processes or data stores.
+- It sets the foundation for deeper diagrams such as **DFD Level 0** and **Level 1**.
+
