@@ -1,0 +1,50 @@
+# 🔁 Anahata – Data Flow Diagram (Level 0)
+
+This diagram represents the major processes involved in the Anahata platform at a high level, detailing how user inputs flow through the system to provide empathetic AI interaction and mental wellness support.
+
+## 🧩 Processes
+
+1. **Login & Authentication**  
+   Validates user credentials and grants access to personalized or guest sessions.
+
+2. **Mood Analysis**  
+   User inputs their current mood or selects from pre-defined options.
+
+3. **Emotional Score Calculation**  
+   System calculates emotional state and logs scores in a temporary store.
+
+4. **GPT Chat Engine**  
+   Handles natural conversation using GPT API based on emotion score.
+
+5. **Calming Module**  
+   Provides personalized breathing, chant, or music suggestions.
+
+6. **Data Cleanup**  
+   Allows users to erase session data, including any media (voice/photo).
+
+---
+
+## 🗃️ Data Stores
+
+- **D1: Emotional Score** — Tracks the computed score per session  
+- **D2: Session Data** — Temporarily stores mood entries and interaction logs
+
+---
+
+## 🌐 External Entities
+
+- **User** — Provides input and receives responses  
+- **GPT API** — Supplies intelligent chat responses via user context
+
+---
+
+## 📌 Key Notes
+
+- No permanent data storage unless the user opts in  
+- Local processing is prioritized for privacy  
+- Voice and photo inputs are processed on-device when possible
+
+---
+
+**Diagram File:** [DFD_Level_0.png](./DFD_Level_0.png)
+
