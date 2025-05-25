@@ -1,0 +1,57 @@
+
+# 🧠 Anahata – DFD Level 1: Mood Analysis Expansion
+
+This **Level 1 Data Flow Diagram (DFD)** expands **Process 2.0 - Mood Analysis** from the Level 0 DFD of the Anahata system. It details the internal subprocesses, data stores, and user interactions involved in capturing and interpreting a user’s emotional state.
+
+---
+
+## 🔍 Expanded Processes in Mood Analysis
+
+| No. | Process Name                      | Description                                                                 |
+|-----|----------------------------------|-----------------------------------------------------------------------------|
+| 2.1 | Collect Basic Emotional Input     | Accepts user mood input (emoji, text, facial data, or voice if enabled).   |
+| 2.2 | Score Mood Questionnaire (optional) | Users optionally respond to mood-based questions.                          |
+| 2.3 | Score Emotional State             | Processes mood input and/or questionnaire answers to produce a score.      |
+| 2.4 | Log Mood Data to Session          | Saves mood score and state for emotional trend tracking.                   |
+
+---
+
+## 📦 Data Stores
+
+- **D1 – Emotional Score**: Stores the calculated mood score.
+- **D2 – Session Data**: Temporarily logs the session’s state for personalized responses.
+
+---
+
+## 🌍 External Entities
+
+- **User**: Inputs mood, interacts with GPT, and receives feedback.
+- **GPT**: Receives user emotional score/context for generating natural, empathetic replies.
+
+---
+
+## 🔁 Key Data Flows
+
+| From        | To                     | Data                                   |
+|-------------|------------------------|----------------------------------------|
+| User        | 2.1                    | Mood Expression / Input                |
+| 2.1         | 2.2                    | Offer Mood Questionnaire               |
+| 2.2         | 2.3                    | Questionnaire Results                  |
+| 2.3         | 2.4                    | Final Mood Score                       |
+| 2.4         | D1, D2                 | Emotional Score, Session Data          |
+| 2.4         | 3                      | Final Mood State → Triggers GPT Input  |
+| 3           | 4                      | Emotional Score → GPT Chat Engine      |
+| 4           | User                   | Empathetic Response                    |
+| 4           | GPT                    | Score & Context for Natural Dialogue   |
+
+---
+
+## 📁 Visual Diagram
+
+![Level 1 DFD](./Level_1_DFD.png)
+
+---
+
+## ✅ Summary
+
+This diagram ensures a transparent and modular breakdown of how **user mood** is collected, scored, logged, and used to drive emotionally supportive conversations — all while preserving **data privacy** and **session integrity**.
